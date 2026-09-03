@@ -1,0 +1,38 @@
+# Виртуальное окружение
+venv/
+.venv/
+env/
+
+# Python кэш и байткод
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Переменные окружения (секреты, пароли от БД, ключи)
+.env
+.env.local
+
+# База данных (если используешь SQLite для тестов)
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Alembic — папку с миграциями коммитить нужно, а вот .pyc внутри неё нет
+alembic/__pycache__/
+
+# Тесты и покрытие кода
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ОС-специфичные файлы
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
