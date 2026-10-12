@@ -17,6 +17,13 @@ class UserCreate(BaseModel):
 
 
 class UserResponse(BaseModel):
+    
+    """ 
+        ConfigDict() - option for all scheme
+        from_attribute - by default Pydantic can read only Dict,
+        but with this option it will can read Classes too
+    """
+
     model_config = ConfigDict(from_attributes=True)
 
     id: uuid.UUID

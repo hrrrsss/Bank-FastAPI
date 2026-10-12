@@ -12,6 +12,6 @@ class Base(DeclarativeBase):
     pass
 
 async def get_db():
-    #with - if happen error "with" close session without problem
+    # with - if happen error "with" close session without problems
     async with SessionLocal() as session:
         yield session
